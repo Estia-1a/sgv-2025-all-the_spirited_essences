@@ -175,21 +175,3 @@ header {
     margin-bottom: 30px;
     text-align: center;
     border-bottom: 4px solid #c61026; /* Touche Rouge*/
-
-/* --- FOOTER --- */
-footer {
-    margin-top: auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-}
-
-.footer-box {
-    border: 2px solid #000;
-    padding: 5px 15px;
-    font-size: 12px;
-    background: #fff;
-} 
-
-
