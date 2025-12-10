@@ -175,7 +175,7 @@ header {
     margin-bottom: 30px;
     text-align: center;
     border-bottom: 4px solid #c61026; /* Touche Rouge*/
-
+}
     .results-header h1 {
         color: #2c3e50;
         font-size: 1.8rem;
@@ -210,4 +210,3 @@ footer {
 } 
 
 
-}
