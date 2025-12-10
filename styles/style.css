@@ -166,6 +166,16 @@ header {
     box-shadow: 3px 3px 0 #000;
 }
 
+/* --- PAGE Passager --- */
+.results-header {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 4px solid #c61026; /* Touche Rouge*/
+
 /* --- FOOTER --- */
 footer {
     margin-top: auto;
@@ -181,3 +191,5 @@ footer {
     font-size: 12px;
     background: #fff;
 } 
+
+
