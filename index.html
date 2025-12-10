@@ -6,59 +6,84 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <div class="logo-square"></div>
-            <span class="site-title">BasqueBasqueCar</span>
-        </div>
-        <div class="header-right">
-            <div class="header-actions">
-                <div class="search-input">🔍 Rechercher un trajet 🎤</div>
-                <div class="publish-btn">Publier un trajet</div>
+        <header>
+            <div class="header-left">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo-square"></div>
+                </a>
+                <span class="site-title">BasqueBasqueCar</span>
             </div>
-            <div class="user-area">
-                <div class="pdp-circle">PDP</div>
-                <a href="profil.html" class="profile-link">Modifier mon profil</a>
+            <div class="header-right">
+                <div class="header-actions">
+                    <div class="search-input">🔍 Rechercher un trajet 🎤</div>
+                    <div class="publish-btn">Publier un trajet</div>
+                </div>
+                <div class="user-area">
+                    <div class="pdp-circle">PDP</div>
+                    <a href="profil.html" class="profile-link">Modifier mon profil</a>
+                </div>
+            </div>
+        </header>
+    
+       <div class="big-banner">
+            <img src="images/banner.jpg" alt="Photo de bannière" class="banner-img">
+            <h1 class="banner-title">Bienvenue sur BasqueBasqueCar</h1>
+        </div>
+    
+       <div class="split-screen">
+           
+            <form class="split-box" action="passager.html" method="GET">
+                <h2 class="split-title"><span style="font-size:20px;">◉</span> Je suis passager</h2>
+                
+                <div style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
+                    
+                    <div style="border:1px solid #000; padding:5px; background:#fff;">
+                        <label>📍</label>
+                        <input type="text" name="depart" placeholder="Départ (ex: Bayonne)" required style="border:none; outline:none; width:80%;">
+                    </div>
+    
+                    <div style="border:1px solid #000; padding:5px; background:#fff;">
+                        <label>🏫</label>
+                        <input type="text" name="arrivee" placeholder="Arrivée (ex: ESTIA)" required style="border:none; outline:none; width:80%;">
+                    </div>
+    
+                    <div style="border:1px solid #000; padding:5px; background:#fff;">
+                        <label>👤</label>
+                        <input type="number" name="nb" placeholder="1 passager" min="1" style="border:none; outline:none; width:80%;">
+                    </div>
+    
+                    <div style="border:1px solid #000; padding:5px; background:#fff;">
+                        <label>📅</label>
+                        <input type="date" name="date" style="border:none; outline:none; width:80%;">
+                    </div>
+    
+                </div>
+    
+                <div style="text-align:center; margin-top:20px;">
+                    <button class="btn-valider" type="submit" style="cursor:pointer;">Rechercher</button>
+                </div>
+            </form>
+    
+            <div class="split-box">
+                <h2 class="split-title"><span style="font-size:20px;">○</span> Je suis conducteur</h2>
+                <p class="fake-text">
+                    -----------------------------------------------------<br>
+                    -----------------------------------------------------<br>
+                    ------------------on met des infos si on veut---<br>
+                    -----------------------------------------------------<br>
+                    -----------------------------------------------------
+                </p>
+                <div style="text-align:center; margin-top:auto;">
+                     <button class="btn-valider" style="margin-top:20px; background:#eee;">Publier</button>
+                </div>
             </div>
         </div>
-    </header>
+    
+        <footer>
+            <div class="footer-box">Sécurité   Informations légales   Contact</div>
+        </footer>
+    
 
-   <div class="big-banner">
-        <img src="images/banner.jpg" alt="Photo de bannière" class="banner-img">
-        <h1 class="banner-title">Bienvenue sur BasqueBasqueCar</h1>
-    </div>
-
-   <div class="split-screen">
-        <div class="split-box">
-            <h2 class="split-title"><span style="font-size:20px;">◉</span> Je suis passager</h2>
-            <p class="fake-text">
-                -----------------------------------------------------<br>
-                -----------------------------------------------------<br>
-                -----------------on met des infos si on veut---<br>
-                -----------------------------------------------------<br>
-                -----------------------------------------------------
-            </p>
-        </div>
-
-        <div class="split-box">
-            <h2 class="split-title"><span style="font-size:20px;">○</span> Je suis conducteur</h2>
-            <p class="fake-text">
-                -----------------------------------------------------<br>
-                -----------------------------------------------------<br>
-                ------------------on met des infos si on veut---<br>
-                -----------------------------------------------------<br>
-                -----------------------------------------------------
-            </p>
-        </div>
-    </div>
-
-    <div class="validate-container">
-        <button class="btn-valider" onclick="window.location.href='passager.html'">Valider</button>
-    </div>
-
-    <footer>
-        <div class="footer-box">Sécurité   Informations légales   Contact</div>
-    </footer>
 
 </body>
 </html>
