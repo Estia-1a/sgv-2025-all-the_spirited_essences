@@ -115,6 +115,22 @@ header {
     display: block;
 }
 
+.with-text {
+    position: relative;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
 
 /* --- PAGE ACCUEIL --- */
 .split-screen {
