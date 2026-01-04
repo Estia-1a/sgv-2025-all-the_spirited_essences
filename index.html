@@ -2,75 +2,68 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Maquette Accueil</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasqueBasqueCar - Accueil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="header-left">
-            <div class="logo-square"></div>
-            <span class="site-title">BasqueBasqueCar</span>
-        </div>
+        <a href="index.html" class="logo">Basque<span>Basque</span>Car</a>
         <div class="header-right">
-            <div class="header-actions">
-                <div class="search-input">🔍 Rechercher un trajet 🎤</div>
-                <div class="publish-btn">Publier un trajet</div>
-            </div>
-            <div class="user-area">
-                <div class="pdp-circle">PDP</div>
-                <a href="profil.html" class="profile-link">Modifier mon profil</a>
-            </div>
+            <a href="profil.html" class="user-profile">
+                <div class="avatar-circle"></div>
+                <span class="profile-link">Mon Profil</span>
+            </a>
         </div>
     </header>
 
-   <div class="big-banner">
-        <img src="images/banner.jpg" alt="Photo de bannière" class="banner-img">
-        <h1 class="banner-title">Bienvenue sur BasqueBasqueCar</h1>
-    </div>
-
-   <div class="split-screen">
-    <form class="split-box" action="passager.html" method="GET">
-        <h2 class="split-title"><span style="font-size:20px;">◉</span> Je suis passager</h2>
-        
-        <div style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
-            <div style="border:1px solid #000; padding:5px; background:#fff;">
-                <label>📍</label>
-                <input type="text" name="depart" placeholder="Départ" required style="border:none; outline:none; width:80%;">
-            </div>
-
-            <div style="border:1px solid #000; padding:5px; background:#fff;">
-                <label>🏫</label>
-                <input type="text" name="arrivee" placeholder="Arrivée" required style="border:none; outline:none; width:80%;">
-            </div>
-
-            <div style="border:1px solid #000; padding:5px; background:#fff;">
-                <label>👤</label>
-                <input type="number" name="nb" placeholder="1 passager" min="1" style="border:none; outline:none; width:80%;">
-            </div>
-
-            <div style="border:1px solid #000; padding:5px; background:#fff;">
-                <label>📅</label>
-                <input type="date" name="date" style="border:none; outline:none; width:80%;">
-            </div>
+    <main>
+        <div class="hero-image">
+            <div class="hero-text">Voyagez moins cher au Pays Basque</div>
         </div>
 
-        <div style="text-align:center; margin-top:20px;">
-            <button class="btn-valider" type="submit" style="cursor:pointer;">Rechercher</button>
-        </div>
-    </form>
+        <div class="split-container">
+            
+            <form class="card-role card-passager" action="passager.html" method="GET">
+                <h2>🎒 Je cherche un trajet</h2>
+                
+                <div class="input-group">
+                    <span>📍</span>
+                    <input type="text" name="depart" placeholder="Départ (ex: Bayonne)" required>
+                </div>
 
-        <div class="split-box">
-            <h2 class="split-title"><span style="font-size:20px;">○</span> Je suis conducteur</h2>
-            <p class="fake-text">
-                -----------------------------------------------------<br>
-                -----------------------------------------------------<br>
-                ------------------on met des infos si on veut---<br>
-                -----------------------------------------------------<br>
-                -----------------------------------------------------
-            </p>
-        </div>
-    </div>
+                <div class="input-group">
+                    <span>🏫</span>
+                    <input type="text" name="arrivee" placeholder="Arrivée (ex: ESTIA)" required>
+                </div>
 
+                <div class="input-group">
+                    <span>👤</span>
+                    <input type="number" name="nb" placeholder="1 passager" min="1" value="1">
+                </div>
+
+                <div class="input-group">
+                    <span>📅</span>
+                    <input type="date" name="date">
+                </div>
+
+                <button type="submit" class="btn-main">Rechercher</button>
+            </form>
+
+            <div class="card-role card-conducteur">
+                <h2>🚗 Je propose un trajet</h2>
+                <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                    Vous avez une voiture ? Rentabilisez vos déplacements vers l'ESTIA ou Bidart en prenant des passagers.
+                </p>
+                <div class="input-group" style="opacity: 0.5;">
+                    <span>📍</span> D'où partez-vous ?
+                </div>
+                <button class="btn-main" style="background-color: var(--primary-green);">Publier un trajet</button>
+            </div>
+
+        </div>
+    </main>
 
     <footer>
         <a href="#">Sécurité</a>
@@ -78,5 +71,6 @@
         <a href="#">Contact</a>
         <p style="margin-top: 10px; font-size: 0.8rem; color: #ccc;">© 2025 ESTIA Projet Web</p>
     </footer>
+
 </body>
 </html>
