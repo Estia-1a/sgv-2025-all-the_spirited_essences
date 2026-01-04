@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Profil - BasqueBasqueCar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
 </head>
 <body>
 
@@ -25,9 +26,9 @@
             <p style="color: #666; font-weight: bold;">Étudiant ESTIA 2A</p>
         </div>
 
-        <div class="profile-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+        <div class="profile-grid">
             
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-red);">
+            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-red); margin-bottom: 20px;">
                 <h3 style="margin-bottom: 15px;">👤 Infos Personnelles</h3>
                 <div class="form-group" style="margin-bottom: 10px;">
                     <label style="display: block; font-size: 0.8rem; color: #888;">Nom</label>
@@ -37,27 +38,19 @@
                     <label style="display: block; font-size: 0.8rem; color: #888;">Prénom</label>
                     <input type="text" class="input-style" value="Patxi" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
                 </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label style="display: block; font-size: 0.8rem; color: #888;">Date de Naissance</label>
-                    <input type="date" class="input-style" value="2002-05-20" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
-                </div>
                 <button class="btn-main">Enregistrer</button>
             </section>
 
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-green);">
+            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-green); margin-bottom: 20px;">
                 <h3 style="margin-bottom: 15px;">📞 Coordonnées</h3>
                 <div class="form-group" style="margin-bottom: 10px;">
                     <label style="display: block; font-size: 0.8rem; color: #888;">Email</label>
                     <input type="email" class="input-style" value="p.etcheverry@net.estia.fr" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
                 </div>
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.8rem; color: #888;">Téléphone</label>
-                    <input type="tel" class="input-style" value="06 12 34 56 78" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
-                </div>
                 <button class="btn-main" style="background-color: var(--primary-green);">Mettre à jour</button>
             </section>
 
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--dark-text);">
+            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--dark-text); margin-bottom: 20px;">
                 <h3 style="margin-bottom: 15px;">📝 Ma Bio</h3>
                 <div class="form-group">
                     <textarea class="input-style" rows="5" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px; resize: none;">Salut ! Je fais le trajet Bayonne-Bidart tous les matins. J'aime le rugby et la pétanque.</textarea>
@@ -67,7 +60,7 @@
 
         </div>
 
-        <div class="bottom-photo-section" style="margin-top: 40px; text-align: center; padding: 20px; background: #eee; border-radius: var(--radius); color: #666; font-style: italic;">
+        <div style="margin-top: 40px; text-align: center; padding: 20px; background: #eee; border-radius: var(--radius); color: #666; font-style: italic;">
             🚗 Véhicule enregistré : Peugeot 208 Blanche
         </div>
 

@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- HEADER --- */
+/* --- Barre de navigation --- */
 header {
     background: var(--white);
     padding: 15px 40px;
@@ -71,7 +71,7 @@ header {
 
 .profile-link { font-size: 0.75rem; margin-top: 4px; color: #666; }
 
-/* --- MAIN --- */
+/* --- Contenu principal --- */
 main {
     flex: 1;
     width: 100%;
@@ -80,8 +80,7 @@ main {
     padding: 40px 20px;
 }
 
-/* --- ACCUEIL --- */
-/* --- Modification de la bannière existante --- */
+/* --- Bannière Accueil --- */
 .hero-image {
     width: 100%;
     height: 250px; 
@@ -95,28 +94,26 @@ main {
     overflow: hidden; 
 }
 
-/* --- Nouveaux styles pour les logos superposés --- */
+/* Logos Estia et Drapeau sur l'image */
 .brand-overlay {
-    position: absolute; /* Positionnement libre dans la bannière */
-    top: 20px; /* Distance du haut */
-    z-index: 10; /* S'assure qu'ils sont au-dessus de l'image de fond */
-    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5)); /* Petite ombre pour bien ressortir */
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
 }
 
-/* Style spécifique pour ESTIA (coin gauche) */
 .estia-logo {
     left: 20px;
-    height: 50px; /* On fixe la hauteur, la largeur s'adapte */
+    height: 50px;
     width: auto;
     border-radius: 8px;
 }
 
-/* Style spécifique pour le drapeau (coin droit) */
 .basque-flag {
     right: 20px;
     height: 40px;
     width: auto;
-    border: 2px solid white; /* Petite bordure blanche pour faire propre */
+    border: 2px solid white;
     border-radius: 4px;
 }
 
@@ -127,12 +124,12 @@ main {
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+/* --- Blocs de recherche --- */
 .split-container {
     display: flex;
     gap: 30px;
 }
 
-/* Style des cartes principales */
 .card-role {
     flex: 1;
     background: var(--white);
@@ -148,7 +145,7 @@ main {
 
 .card-role h2 { margin-bottom: 20px; color: var(--dark-text); display: flex; align-items: center; gap: 10px; }
 
-/* Inputs stylisés dans le formulaire */
+/* Style des champs de texte */
 .input-group {
     background: #f8f9fa;
     border: 1px solid #e9ecef;
@@ -185,7 +182,7 @@ main {
 
 .btn-main:hover { background: #a00d1e; }
 
-/* --- PAGE PASSAGER (RÉSULTATS) --- */
+/* --- Cartes des trajets --- */
 .results-header {
     background: var(--white);
     padding: 30px;
@@ -213,49 +210,32 @@ main {
 .trip-info { display: flex; gap: 20px; align-items: center; }
 .driver-avatar { width: 50px; height: 50px; border-radius: 50%; background-size: cover; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 .trip-time { font-size: 1.2rem; font-weight: bold; color: var(--dark-text); }
-.trip-route { color: #666; font-size: 0.9rem; margin-top: 2px; }
 .trip-price { font-size: 1.5rem; font-weight: bold; color: var(--primary-green); }
 
-/* --- FOOTER --- */
-footer {
-    background: #fff;
-    padding: 30px;
-    text-align: center;
-    margin-top: auto;
-    border-top: 1px solid #eee;
-}
-
-footer a { color: #666; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
-
-/* --- EFFET HOVER CONDUCTEUR --- */
-
-/* Conteneur de l'avatar pour positionner la bulle par rapport à lui */
+/* --- Pop-up info conducteur (Hover) --- */
 .driver-container {
     position: relative;
     cursor: help;
 }
 
-/* La bulle d'informations (cachée par défaut) */
 .driver-popover {
     visibility: hidden;
     opacity: 0;
     width: 200px;
     background-color: var(--white);
     color: var(--dark-text);
-    text-align: left;
     border-radius: 8px;
     padding: 15px;
     position: absolute;
     z-index: 10;
-    bottom: 125%; /* Affiche au-dessus de l'avatar */
+    bottom: 125%; 
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: 0.3s;
     border: 1px solid #eee;
 }
 
-/* Petit triangle en bas de la bulle */
 .driver-popover::after {
     content: "";
     position: absolute;
@@ -267,22 +247,21 @@ footer a { color: #666; text-decoration: none; margin: 0 10px; font-size: 0.9rem
     border-color: var(--white) transparent transparent transparent;
 }
 
-/* Affichage au survol */
 .driver-container:hover .driver-popover {
     visibility: visible;
     opacity: 1;
 }
 
-.popover-title {
-    font-weight: bold;
-    color: var(--primary-red);
-    margin-bottom: 5px;
-    display: block;
+.popover-title { font-weight: bold; color: var(--primary-red); margin-bottom: 5px; display: block; }
+.popover-detail { font-size: 0.8rem; color: #666; display: block; margin-top: 3px; }
+
+/* --- Bas de page --- */
+footer {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #eee;
 }
 
-.popover-detail {
-    font-size: 0.8rem;
-    color: #666;
-    display: block;
-    margin-top: 3px;
-}
+footer a { color: #666; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
