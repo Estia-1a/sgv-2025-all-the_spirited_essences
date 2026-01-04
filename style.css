@@ -81,15 +81,45 @@ main {
 }
 
 /* --- ACCUEIL --- */
+/* --- Modification de la bannière existante --- */
 .hero-image {
     width: 100%;
-    height: 200px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80') center/cover;
+    height: 250px; 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('media/fond.jpg') center/cover;
     border-radius: var(--radius);
     margin-bottom: 40px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; 
     padding: 20px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* --- Nouveaux styles pour les logos superposés --- */
+.brand-overlay {
+    position: absolute; /* Positionnement libre dans la bannière */
+    top: 20px; /* Distance du haut */
+    z-index: 10; /* S'assure qu'ils sont au-dessus de l'image de fond */
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5)); /* Petite ombre pour bien ressortir */
+}
+
+/* Style spécifique pour ESTIA (coin gauche) */
+.estia-logo {
+    left: 20px;
+    height: 50px; /* On fixe la hauteur, la largeur s'adapte */
+    width: auto;
+    background: rgba(255,255,255,0.8); /* Petit fond blanc semi-transparent pour lisibilité */
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Style spécifique pour le drapeau (coin droit) */
+.basque-flag {
+    right: 20px;
+    height: 40px;
+    width: auto;
+    border: 2px solid white; /* Petite bordure blanche pour faire propre */
+    border-radius: 4px;
 }
 
 .hero-text {
