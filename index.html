@@ -21,8 +21,8 @@
 
     <main>
         <div class="hero-image">
-            <img src="Images/logo-estia.png" alt="Logo ESTIA" class="brand-overlay estia-logo">
-            <img src="Images/ikurrina.png" alt="Drapeau Basque" class="brand-overlay basque-flag">
+            <img src="media/estia.png" alt="Logo ESTIA" class="brand-overlay estia-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_the_Basque_Country.svg/320px-Flag_of_the_Basque_Country.svg.png" alt="Drapeau Basque" class="brand-overlay basque-flag">
             
             <div class="hero-text">
                 Trouvez votre covoiturage<br>au Pays Basque !
@@ -30,44 +30,37 @@
         </div>
 
         <div class="split-container">
-            
             <form class="card-role card-passager" action="passager.html" method="GET">
                 <h2>🎒 Je cherche un trajet</h2>
-                
                 <div class="input-group">
                     <span>📍</span>
                     <input type="text" name="depart" placeholder="Départ (ex: Bayonne)" required>
                 </div>
-
                 <div class="input-group">
                     <span>🏫</span>
                     <input type="text" name="arrivee" placeholder="Arrivée (ex: ESTIA)" required>
                 </div>
-
                 <div class="input-group">
                     <span>👤</span>
                     <input type="number" name="nb" placeholder="1 passager" min="1" value="1">
                 </div>
-
                 <div class="input-group">
                     <span>📅</span>
                     <input type="date" name="date">
                 </div>
-
                 <button type="submit" class="btn-main">Rechercher</button>
             </form>
 
             <div class="card-role card-conducteur">
                 <h2>🚗 Je propose un trajet</h2>
                 <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
-                    Vous avez une voiture ? Rentabilisez vos déplacements vers l'ESTIA ou Bidart en prenant des passagers.
+                    Vous avez une voiture ? Partagez vos frais vers l'ESTIA ou Bidart.
                 </p>
                 <div class="input-group" style="opacity: 0.5;">
                     <span>📍</span> D'où partez-vous ?
                 </div>
                 <button class="btn-main" style="background-color: var(--primary-green);">Publier un trajet</button>
             </div>
-
         </div>
     </main>
 
