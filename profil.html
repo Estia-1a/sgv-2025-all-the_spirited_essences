@@ -20,42 +20,50 @@
     </header>
 
     <main>
-        <div class="profile-header">
-            <div class="big-avatar" style="width: 100px; height: 100px; background-image: url('https://i.pravatar.cc/150?img=12'); background-size: cover; border-radius: 50%; margin: 0 auto 15px; border: 3px solid var(--primary-green);"></div>
-            <h1 style="color: var(--dark-text);">Patxi Etcheverry</h1>
+        <div class="profile-header" style="text-align: center; margin-bottom: 30px;">
+            <div class="big-avatar" style="width: 120px; height: 120px; background-image: url('https://i.pravatar.cc/150?img=12'); background-size: cover; border-radius: 50%; margin: 0 auto 15px; border: 4px solid var(--primary-green);"></div>
+            <h1 style="color: var(--dark-text); font-size: 2.2rem;">Patxi Etcheverry</h1>
             <p style="color: #666; font-weight: bold;">Étudiant ESTIA 2A</p>
         </div>
 
         <div class="profile-grid">
             
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-red); margin-bottom: 20px;">
-                <h3 style="margin-bottom: 15px;">👤 Infos Personnelles</h3>
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.8rem; color: #888;">Nom</label>
-                    <input type="text" class="input-style" value="Etcheverry" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <section class="profile-box" style="border-top: 5px solid var(--primary-red);">
+                <h3>👤 Infos Personnelles</h3>
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input type="text" class="input-style" value="Etcheverry">
                 </div>
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.8rem; color: #888;">Prénom</label>
-                    <input type="text" class="input-style" value="Patxi" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+                <div class="form-group">
+                    <label>Prénom</label>
+                    <input type="text" class="input-style" value="Patxi">
+                </div>
+                <div class="form-group">
+                    <label>Date de Naissance</label>
+                    <input type="date" class="input-style" value="2002-05-20">
                 </div>
                 <button class="btn-main">Enregistrer</button>
             </section>
 
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--primary-green); margin-bottom: 20px;">
-                <h3 style="margin-bottom: 15px;">📞 Coordonnées</h3>
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.8rem; color: #888;">Email</label>
-                    <input type="email" class="input-style" value="p.etcheverry@net.estia.fr" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <section class="profile-box" style="border-top: 5px solid var(--primary-green);">
+                <h3>📞 Coordonnées</h3>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="input-style" value="p.etcheverry@net.estia.fr">
                 </div>
-                <button class="btn-main" style="background-color: var(--primary-green);">Mettre à jour</button>
+                <div class="form-group">
+                    <label>Téléphone</label>
+                    <input type="tel" class="input-style" value="06 12 34 56 78">
+                </div>
+                <button class="btn-main" style="background-color: var(--primary-green); margin-top: 55px;">Mettre à jour</button>
             </section>
 
-            <section class="profile-box" style="background: white; padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 5px solid var(--dark-text); margin-bottom: 20px;">
-                <h3 style="margin-bottom: 15px;">📝 Ma Bio</h3>
+            <section class="profile-box" style="border-top: 5px solid var(--dark-text);">
+                <h3>📝 Ma Bio</h3>
                 <div class="form-group">
-                    <textarea class="input-style" rows="5" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px; resize: none;">Salut ! Je fais le trajet Bayonne-Bidart tous les matins. J'aime le rugby et la pétanque.</textarea>
+                    <textarea class="input-style" rows="6" style="resize: none;">Salut ! Je fais le trajet Bayonne-Bidart tous les matins. J'aime le rugby et la pétanque.</textarea>
                 </div>
-                <button class="btn-main" style="background-color: var(--dark-text); margin-top: 10px;">Modifier la bio</button>
+                <button class="btn-main" style="background-color: var(--dark-text); margin-top: 15px;">Modifier la bio</button>
             </section>
 
         </div>
@@ -63,7 +71,6 @@
         <div style="margin-top: 40px; text-align: center; padding: 20px; background: #eee; border-radius: var(--radius); color: #666; font-style: italic;">
             🚗 Véhicule enregistré : Peugeot 208 Blanche
         </div>
-
     </main>
 
     <footer>
