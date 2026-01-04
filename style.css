@@ -108,8 +108,6 @@ main {
     left: 20px;
     height: 50px; /* On fixe la hauteur, la largeur s'adapte */
     width: auto;
-    background: rgba(255,255,255,0.8); /* Petit fond blanc semi-transparent pour lisibilité */
-    padding: 5px 10px;
     border-radius: 8px;
 }
 
